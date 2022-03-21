@@ -16,3 +16,11 @@
 .ant-form-item-control-input-content {
   text-align: center;
 }
+.login-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  padding: 30px;
+}
