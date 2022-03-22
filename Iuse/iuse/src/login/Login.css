@@ -21,6 +21,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
+  width: 70%;
   padding: 30px;
+}
+.ant-form-item {
+  margin-bottom: 40px;
 }
