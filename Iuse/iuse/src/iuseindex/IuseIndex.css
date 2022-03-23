@@ -7,4 +7,24 @@
 }
 .site-layout .site-layout-background {
   background: #fff;
+  width: 90%;
+  margin: 0 auto;
+}
+.headshot {
+  float: right;
+}
+.logo {
+  float: left;
+  width: 120px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 12px 24px 12px 0;
+}
+.logoimg {
+  float: left;
+  width: 120px;
+  height: 40px;
+}
+.ant-layout-header ul {
+  width: 300px;
 }

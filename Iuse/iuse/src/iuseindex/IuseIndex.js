@@ -1,6 +1,10 @@
 import React from 'react'
 import { Layout, Menu, Breadcrumb } from 'antd';
 import './IuseIndex.css'
+import Headshot from '../Components/Headshot';
+import { Link } from 'react-router-dom';
+import Logo from '../Image/peiqi.jpg'
+import UserDropdown from '../Components/UserDropdown';
 
 const { Header, Content, Footer } = Layout;
 
@@ -9,7 +13,14 @@ export default function IuseIndex() {
     <>
       <Layout>
         <Header style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
-          <div className="logo" />
+          <div className="logo">
+            <Link to='/'>
+              <img className='logoimg' src={Logo}></img>
+            </Link>
+          </div>
+          {/* <span className='header-username' style={{ color: 'white', float: 'right', marginLeft: 30 }}>LianYii</span> */}
+          <div className='headshot'><Headshot /><UserDropdown /></div>
+
           <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
             <Menu.Item key="1">nav 1</Menu.Item>
             <Menu.Item key="2">nav 2</Menu.Item>
