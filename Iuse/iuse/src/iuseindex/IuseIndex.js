@@ -5,6 +5,8 @@ import Headshot from '../Components/Headshot';
 import { Link } from 'react-router-dom';
 import Logo from '../Image/peiqi.jpg'
 import UserDropdown from '../Components/UserDropdown';
+import { Empty } from 'antd';
+import Totop from '../Components/Totop';
 
 const { Header, Content, Footer } = Layout;
 
@@ -34,11 +36,12 @@ export default function IuseIndex() {
             <Breadcrumb.Item>App</Breadcrumb.Item>
           </Breadcrumb>
           <div className="site-layout-background" style={{ padding: 24, minHeight: 380 }}>
-            Content
+            <Empty />
           </div>
         </Content>
-        <Footer style={{ textAlign: 'center' }}>©2022 GraPro-IUSE-online-disk Created by LHL</Footer>
+        <Footer style={{ textAlign: 'center' }}>©2022 GraPro-IUSE-online-disk Created by LHL</Footer><Totop />
       </Layout>
+
     </>
   )
 }
