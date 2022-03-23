@@ -39,7 +39,8 @@ export default function IuseIndex() {
             <Empty />
           </div>
         </Content>
-        <Footer style={{ textAlign: 'center' }}>©2022 GraPro-IUSE-online-disk Created by LHL</Footer><Totop />
+        <Footer style={{ textAlign: 'center' }}>©2022 GraPro-IUSE-online-disk Created by LHL</Footer>
+        <Totop />
       </Layout>
 
     </>

@@ -15,8 +15,10 @@ const style = {
 
 export default function Totop() {
     return (
+        // <div style={{ height: '600vh', padding: 8 }}>
         <BackTop>
             <div style={style}>UP</div>
         </BackTop>
+        // </div> 
     )
 }
