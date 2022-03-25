@@ -4,6 +4,9 @@ import IuseIndex from '../iuseindex/IuseIndex'
 import Login from '../login/Login'
 import NotFound from '../notFound/NotFound'
 import Register from '../register/Register'
+import Forecast from '../Components/Forecast'
+import Trashbin from '../Components/Trashbin'
+import Person from '../person/Person'
 
 export default function Router() {
   return (
@@ -11,8 +14,12 @@ export default function Router() {
       <Routes>
         <Route path='register' element={<Register />} />
         <Route path='login' element={<Login />} />
-        <Route path='/' element={<IuseIndex />} />
+        <Route path='/' element={<IuseIndex />} >
+          <Route path='trashbin' element={<Trashbin />} />
+          <Route path='tree' element={<Forecast />} />
+        </Route>
         <Route path='*' element={<NotFound />} />
+        <Route path='person' element={<Person />} />
       </Routes>
     </HashRouter>
   )

@@ -89,7 +89,7 @@ const RegistrationForm = () => {
   }));
   return (
     <>
-      <h1 style={{ textAlign: "center", margin: "3% 0" }}>Welcome to IUSE-online-disk!</h1>
+      <h1 style={{ textAlign: "center", margin: "5% 0" }}>Welcome to IUSE-online-disk!</h1>
       <Form
         {...formItemLayout}
         form={form}
@@ -116,7 +116,7 @@ const RegistrationForm = () => {
             },
           ]}
         >
-          <Input />
+          <Input minLength={6} maxLength={16} />
         </Form.Item>
 
         <Form.Item
@@ -172,55 +172,6 @@ const RegistrationForm = () => {
           <Input />
         </Form.Item>
 
-
-        <Form.Item
-          name="phone"
-          label="Phone Number"
-          rules={[
-            {
-              required: true,
-              message: 'Please input your phone number!',
-            },
-          ]}
-        >
-          <Input
-            addonBefore={prefixSelector}
-            style={{
-              width: '100%',
-            }}
-          />
-        </Form.Item>
-
-
-        <Form.Item
-          name="intro"
-          label="Intro"
-          rules={[
-            {
-              required: true,
-              message: 'Please input Intro',
-            },
-          ]}
-        >
-          <Input.TextArea showCount maxLength={100} />
-        </Form.Item>
-
-        <Form.Item
-          name="gender"
-          label="Gender"
-          rules={[
-            {
-              required: true,
-              message: 'Please select gender!',
-            },
-          ]}
-        >
-          <Select placeholder="select your gender">
-            <Option value="male">Male</Option>
-            <Option value="female">Female</Option>
-            <Option value="other">Other</Option>
-          </Select>
-        </Form.Item>
 
         {/* <Form.Item label="Captcha" extra="We must make sure that your are a human.">
           <Row gutter={8}>

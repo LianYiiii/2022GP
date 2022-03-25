@@ -14,7 +14,7 @@ export default function IuseIndex() {
   return (
     <>
       <Layout>
-        <Header style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
+        <Header style={{ position: 'fixed', zIndex: 1, width: '100%', padding: '0 8%' }}>
           <div className="logo">
             <Link to='/'>
               <img className='logoimg' src={Logo}></img>
@@ -24,9 +24,21 @@ export default function IuseIndex() {
           <div className='headshot'><Headshot /><UserDropdown /></div>
 
           <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
-            <Menu.Item key="1">nav 1</Menu.Item>
-            <Menu.Item key="2">nav 2</Menu.Item>
-            <Menu.Item key="3">nav 3</Menu.Item>
+            <Menu.Item key="1">
+              <Link to='/' >
+                首页
+              </Link>
+            </Menu.Item>
+            <Menu.Item key="2">
+              <Link to='trashbin' >
+                回收站
+              </Link>
+            </Menu.Item>
+            <Menu.Item key="3">
+              <Link to='tree' >
+                预览
+              </Link>
+            </Menu.Item>
           </Menu>
         </Header>
         <Content className="site-layout" style={{ padding: '0 50px', marginTop: 64 }}>
@@ -36,7 +48,7 @@ export default function IuseIndex() {
             <Breadcrumb.Item>App</Breadcrumb.Item>
           </Breadcrumb>
           <div className="site-layout-background" style={{ padding: 24, minHeight: 380 }}>
-            <Empty />
+            {/*  <Empty />*/}
           </div>
         </Content>
         <Footer style={{ textAlign: 'center' }}>©2022 GraPro-IUSE-online-disk Created by LHL</Footer>
